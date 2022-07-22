@@ -1,3 +1,4 @@
+
 print('\nPerintah del')
 daftar_buku = ['Seven Habits', 'How to Influence People', 'First Things First', '4DX']
 del daftar_buku [0]
