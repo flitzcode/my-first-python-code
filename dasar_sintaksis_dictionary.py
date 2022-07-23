@@ -41,6 +41,6 @@ print(result)
 print(type(result)) #mengetahui tipe data, hasilnya tipe data "str"
 
 with open('result.json', 'w') as file:
-    json.dump(users, file) #kalo ga pake "s" itu merubah ke file
+    json.dump(users, file) #kalo ga pake "s" itu merubah ke files
 
 
