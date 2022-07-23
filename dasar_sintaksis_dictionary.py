@@ -26,5 +26,21 @@ print(users["address"])
 print(users["address"]["geo"]["lat"])
 print(users["address"]["geo"]["lng"])
 
-print(merubah python dictionary menjadi JSON)
+#users = {
+#    "Kucing": "pawpaw",
+#    "Istri": "Vian",
+#    "Buah": "Apel"
+#}
+
+print(users)
+print(type(users)) #mengetahui tipe data, hasilnya tipe data "dict"
+print("\nMerubah python dictionary menjadi JSON")
+import json
+result = json.dumps(users) #kalo dengan "s" itu ke data string
+print(result)
+print(type(result)) #mengetahui tipe data, hasilnya tipe data "str"
+
+with open('result.json', 'w') as file:
+    json.dump(users, file) #kalo ga pake "s" itu merubah ke file
+
 
