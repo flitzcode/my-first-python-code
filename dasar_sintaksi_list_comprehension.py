@@ -36,6 +36,7 @@ for i in range(0,len(daftar_buku_baru)):
 
 print('\nMembuat list baru dengan comprehension:ganjil')
 daftar_buku = ['1 Seven Habits', '2 How to Influence People', '3 First Things First', '4 4DX']
-daftar_buku_baru = daftar_buku[0::2]
+daftar_buku_baru = daftar_buku[0:-1:2]
 for i in range(0, len(daftar_buku_baru)):
     print(daftar_buku_baru[i])
+
